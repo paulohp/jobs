@@ -21,7 +21,7 @@
   </div>
   <div style="margin-left:0;" class="span4 field">
     <%= f.label :website, "Tem site? Manda ae:" %>
-    <%= f.text_field :website %>
+    <%= f.text_field :website,:placeholder => "http://" %>
   </div>
   <div class="span4 field">
     <%= f.label :category %>
@@ -56,7 +56,8 @@
     <span>Você concorda que o envio pode ser apagado sem aviso prévio se não seguir as nossas orientações (ver topo da página) ou contém linguagem imprópria ou conteúdo.</span>
     <label><%= f.check_box :terms %>Sim, eu aceito</label>
   </div>
+  <br>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Enviar", :class => "btn btn-large btn-primary" %>
   </div>
 <% end %>
