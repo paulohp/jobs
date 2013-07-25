@@ -71,6 +71,10 @@ a:focus {
     color: #3e3e3e;
     text-decoration: none;
 }
+label{
+    font-size: 18px;
+    font-weight: bold;
+}
 h1,
 h2,
 h3,

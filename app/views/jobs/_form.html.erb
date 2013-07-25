@@ -25,13 +25,14 @@
   </div>
   <div class="span4 field">
     <%= f.label :category %>
-    <%= f.select :category, [["Selecione uma categoria", 0]]+ @categories.collect { |c| [c.name, c.id]}, :class=>"span4"  %>
+    <%= f.select :category, [["Selecione uma categoria", 0]]+ @categories.collect { |c| [c.name, c.id]}, :style=>"width: 370px;"  %>
   </div>
   <div class="field">
-    <%= f.label :description %>
-    
+    <%= f.label :description, "Pequena introdução da vaga" %>
+    <span>2 a 3 paragrafos que atraiam a atenção de posiveis candidatos.</span>
     <%= f.cktext_area :description, :ckeditor => {:uiColor => "#f4f4f4", :toolbar => "mini"} %>
   </div>
+  <br><br>
   <div class="field">
     <%= f.label :company_description %>
     <%= f.cktext_area :company_description, :ckeditor => {:uiColor => "#f4f4f4", :toolbar => "mini"} %>
@@ -41,16 +42,17 @@
     <%= f.text_field :keywords %>
   </div>
   <div style="margin-left:0;" class="span4 field">
-    <%= f.label :apply_email %>
+    <%= f.label :apply_email, "Interessados serão enviados para:" %>
     <%= f.text_field :apply_email %>
   </div>
   <div class="span4 field">
-    <%= f.label :contact %>
+    <%= f.label :contact, "Como podemos falar com você?" %>
     <%= f.text_field :contact %>
   </div>
   <div class="field">
-    <%= f.label :terms %>
-    <%= f.check_box :terms %>
+    <%= f.label :terms, "Termos:" %>
+    <span>Você concorda que o envio pode ser apagado sem aviso prévio se não seguir as nossas orientações (ver topo da página) ou contém linguagem imprópria ou conteúdo.</span>
+    <label><%= f.check_box :terms %>Sim, eu aceito</label>
   </div>
   <div class="actions">
     <%= f.submit %>
