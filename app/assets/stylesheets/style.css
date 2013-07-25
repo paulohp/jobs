@@ -156,6 +156,15 @@ ul.bullet li:before {
 	color: #FFF;
 	margin: 0;
 }
+.logo h1{
+   color: #1ABB9C;
+}
+.logo .bra{
+    color: green;
+}
+.logo .sil{
+    color: yellow;
+}
 .section-head h1:after {
 	content: "";
 	display: block;
@@ -742,7 +751,7 @@ blockquote small {
 /*	LAYOUT
 /*-----------------------------------------------------------------------------------*/
 .offset {
-	padding-top: 90px;
+	padding-top: 119px;
 }
 .inner {
 	padding-top: 80px;
@@ -2486,6 +2495,7 @@ img.small {
 	#header.navbar .nav > li > .dropdown-menu:after {
 	  display: none;
 	}
+    
 	#header .dropdown-menu > li > a:hover,
 	#header .dropdown-menu > li > a:focus,
 	#header .dropdown-submenu:hover > a,
