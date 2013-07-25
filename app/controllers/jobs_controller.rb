@@ -25,6 +25,7 @@ class JobsController < ApplicationController
   # GET /jobs/new.json
   def new
     @job = Job.new
+    @categories = Category.all
 
     respond_to do |format|
       format.html # new.html.erb

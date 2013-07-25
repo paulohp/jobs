@@ -11,25 +11,25 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %>
+  <div style="margin-left:0;" class="span4 field">
+    <%= f.label :title, "Título da vaga:" %>
     <%= f.text_field :title %>
+  </div>
+  <div class="span4 field">
+    <%= f.label :company_name, "Nome da empresa:" %>
+    <%= f.text_field :company_name %>
+  </div>
+  <div style="margin-left:0;" class="span4 field">
+    <%= f.label :website, "Tem site? Manda ae:" %>
+    <%= f.text_field :website %>
+  </div>
+  <div class="span4 field">
+    <%= f.label :category %>
+    <%= f.select :category, [["Selecione uma categoria", 0]]+ @categories.collect { |c| [c.name, c.id]}, :class=>"span4"  %>
   </div>
   <div class="field">
     <%= f.label :description %>
     <%= f.text_field :description %>
-  </div>
-  <div class="field">
-    <%= f.label :company_name %>
-    <%= f.text_field :company_name %>
-  </div>
-  <div class="field">
-    <%= f.label :website %>
-    <%= f.text_field :website %>
-  </div>
-  <div class="field">
-    <%= f.label :category %>
-    <%= f.text_field :category %>
   </div>
   <div class="field">
     <%= f.label :company_description %>
