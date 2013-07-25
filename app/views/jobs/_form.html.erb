@@ -34,7 +34,7 @@
   </div>
   <div class="field">
     <%= f.label :company_description %>
-    <%= f.text_field :company_description %>
+    <%= f.cktext_area :company_description, :ckeditor => {:uiColor => "#f4f4f4", :toolbar => "mini"} %>
   </div>
   <div class="field">
     <%= f.label :keywords %>
