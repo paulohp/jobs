@@ -37,14 +37,14 @@
     <%= f.cktext_area :company_description, :ckeditor => {:uiColor => "#f4f4f4", :toolbar => "mini"} %>
   </div>
   <div class="field">
-    <%= f.label :keywords %>
+    <%= f.label :keywords, "Palavras chave:" %>
     <%= f.text_field :keywords %>
   </div>
-  <div class="field">
+  <div style="margin-left:0;" class="span4 field">
     <%= f.label :apply_email %>
     <%= f.text_field :apply_email %>
   </div>
-  <div class="field">
+  <div class="span4 field">
     <%= f.label :contact %>
     <%= f.text_field :contact %>
   </div>
