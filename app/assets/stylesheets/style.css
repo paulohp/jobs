@@ -75,6 +75,10 @@ label{
     font-size: 18px;
     font-weight: bold;
 }
+.gfield_required {
+color: #790000;
+margin-left: 4px;
+}
 h1,
 h2,
 h3,

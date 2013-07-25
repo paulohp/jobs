@@ -12,43 +12,43 @@
   <% end %>
 
   <div style="margin-left:0;" class="span4 field">
-    <%= f.label :title, "Título da vaga:" %>
+    <%= f.label :title, "Título da vaga *" %>
     <%= f.text_field :title %>
   </div>
   <div class="span4 field">
-    <%= f.label :company_name, "Nome da empresa:" %>
+    <%= f.label :company_name, "Nome da empresa *" %>
     <%= f.text_field :company_name %>
   </div>
   <div style="margin-left:0;" class="span4 field">
-    <%= f.label :website, "Tem site? Manda ae:" %>
+    <%= f.label :website, "Tem site? Manda ae *" %>
     <%= f.text_field :website,:placeholder => "http://" %>
   </div>
   <div class="span4 field">
-    <%= f.label :category %>
+    <%= f.label :category, "Categoria *" %>
     <%= f.select :category, [["Selecione uma categoria", 0]]+ @categories.collect { |c| [c.name, c.id]}, :style=>"width: 370px;"  %>
   </div>
   <div class="field">
-    <%= f.label :description, "Pequena introdução da vaga" %>
+    <%= f.label :description, "Pequena introdução da vaga *" %>
     <span>2 a 3 paragrafos que atraiam a atenção de posiveis candidatos.</span>
     <%= f.cktext_area :description, :ckeditor => {:uiColor => "#f4f4f4", :toolbar => "mini"} %>
   </div>
   <br>
   <div class="field">
-    <%= f.label :company_description, "Descreva sua startup e a vaga aberta" %>
+    <%= f.label :company_description, "Descreva sua startup e a vaga aberta *" %>
     <span>Informações relevantes sobre sua empresa, produto, equipe, sonhos, seus planos de conquista mundial, as responsabilidades do trabalho, requisitos, data de início, salário, etc</span>
     <%= f.cktext_area :company_description, :ckeditor => {:uiColor => "#f4f4f4", :toolbar => "mini"} %>
   </div>
   <br>
   <div class="field">
-    <%= f.label :keywords, "Palavras chave:" %>
+    <%= f.label :keywords, "Palavras chave" %>
     <%= f.text_field :keywords %>
   </div>
   <div style="margin-left:0;" class="span4 field">
-    <%= f.label :apply_email, "Interessados serão enviados para:" %>
+    <%= f.label :apply_email, "Interessados serão enviados para *" %>
     <%= f.text_field :apply_email %>
   </div>
   <div class="span4 field">
-    <%= f.label :contact, "Como podemos falar com você?" %>
+    <%= f.label :contact, "Como podemos falar com você? *" %>
     <%= f.text_field :contact %>
   </div>
   <div class="field">
