@@ -7,24 +7,24 @@
 <!-- /.section-head -->
 <div class="container inner">
   <div class="row">
+  <div>
     <% @jobs.each do |job| %>
-      <tr>
-        <td><%= job.title %></td>
-        <td><%= job.description %></td>
-        <td><%= job.company_name %></td>
-        <td><%= job.website %></td>
-        <td><%= job.category %></td>
-        <td><%= job.company_description %></td>
-        <td><%= job.keywords %></td>
-        <td><%= job.apply_email %></td>
-        <td><%= job.contact %></td>
-        <td><%= job.terms %></td>
-        <td><%= link_to 'Show', job %></td>
-        <td><%= link_to 'Edit', edit_job_path(job) %></td>
-        <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <span><%= job.company_name %></span>/<span><%= job.category %></span>
+        <%= link_to job do %>
+            <h1><%=job.title%></h1>
+        <% end %>
+        <div>
+            <%= job.created_at.to_s(:post) %>
+        </div>
+        <div>
+            <%= job.description %>
+        </div>
+        
+        <%= link_to "Ver mais", job %>
+      
     <% end %>
-    </table>
+  </div>
+
 
     </div>
       <!-- /.row -->
