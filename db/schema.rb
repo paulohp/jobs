@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130725152624) do
+ActiveRecord::Schema.define(:version => 20130815192716) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -40,7 +40,6 @@ ActiveRecord::Schema.define(:version => 20130725152624) do
     t.string   "description"
     t.string   "company_name"
     t.string   "website"
-    t.string   "category"
     t.string   "company_description"
     t.string   "keywords"
     t.string   "apply_email"
@@ -48,6 +47,7 @@ ActiveRecord::Schema.define(:version => 20130725152624) do
     t.boolean  "terms"
     t.datetime "created_at",          :null => false
     t.datetime "updated_at",          :null => false
+    t.integer  "category_id"
   end
 
   create_table "taggings", :force => true do |t|

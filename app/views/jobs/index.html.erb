@@ -9,7 +9,7 @@
   <div class="row">
   <div class="span8">
     <% @jobs.each do |job| %>
-        <span><%= link_to job.company_name, job.website %></span>/<span><%= job.category %></span>
+        <span><%= link_to job.company_name, job.website %></span>/<span><%= job.category.name %></span>
         <%= link_to job do %>
             <h1><%=job.title%></h1>
         <% end %>
@@ -17,7 +17,7 @@
             <%= job.created_at.to_s(:post) %>
         </div>
         <div>
-            <%= job.description %>
+            <%= job.description.html_safe %>
         </div>
         
         <%= link_to "Ver mais", job %>
