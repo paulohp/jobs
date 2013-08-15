@@ -24,8 +24,9 @@
     <%= f.text_field :website,:placeholder => "http://" %>
   </div>
   <div class="span4 field">
-    <%= f.label :category, "Categoria *" %>
-    <%= f.select :category, [["Selecione uma categoria", 0]]+ @categories.collect { |c| [c.name, c.id]}, :style=>"width: 370px;"  %>
+    <%@categories = Category.all%>
+    <%= f.label :category_id, "Categoria *" %>
+    <%= f.select :category_id, [["Selecione uma categoria", 0]]+ @categories.collect { |c| [c.name, c.id]}, :style=>"width: 370px;"  %>
   </div>
   <div class="field">
     <%= f.label :description, "Pequena introdução da vaga *" %>
