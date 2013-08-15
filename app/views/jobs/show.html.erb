@@ -1,55 +1,71 @@
-<p id="notice"><%= notice %></p>
+<div class="section-head">
+  <div class="container">
+    <h1><%= @job.title %></h1>
+  </div>
+  <!-- /.container --> 
+</div>
+<!-- /.section-head -->
+<div class="container inner">
+  <div class="row">
+  <div class="span8">
+    <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
-  <%= @job.title %>
-</p>
+    <p>
+      <b>Title:</b>
+      <%= @job.title %>
+    </p>
 
-<p>
-  <b>Description:</b>
-  <%= @job.description %>
-</p>
+    <p>
+      <b>Description:</b>
+      <%= @job.description %>
+    </p>
 
-<p>
-  <b>Company name:</b>
-  <%= @job.company_name %>
-</p>
+    <p>
+      <b>Company name:</b>
+      <%= @job.company_name %>
+    </p>
 
-<p>
-  <b>Website:</b>
-  <%= @job.website %>
-</p>
+    <p>
+      <b>Website:</b>
+      <%= @job.website %>
+    </p>
 
-<p>
-  <b>Category:</b>
-  <%= @job.category %>
-</p>
+    <p>
+      <b>Category:</b>
+      <%= @job.category %>
+    </p>
 
-<p>
-  <b>Company description:</b>
-  <%= @job.company_description %>
-</p>
+    <p>
+      <b>Company description:</b>
+      <%= @job.company_description %>
+    </p>
 
-<p>
-  <b>Keywords:</b>
-  <%= @job.keywords %>
-</p>
+    <p>
+      <b>Keywords:</b>
+      <%= @job.keywords %>
+    </p>
 
-<p>
-  <b>Apply email:</b>
-  <%= @job.apply_email %>
-</p>
+    <p>
+      <b>Apply email:</b>
+      <%= @job.apply_email %>
+    </p>
 
-<p>
-  <b>Contact:</b>
-  <%= @job.contact %>
-</p>
+    <p>
+      <b>Contact:</b>
+      <%= @job.contact %>
+    </p>
 
-<p>
-  <b>Terms:</b>
-  <%= @job.terms %>
-</p>
+    <p>
+      <b>Terms:</b>
+      <%= @job.terms %>
+    </p>
 
 
-<%= link_to 'Edit', edit_job_path(@job) %> |
-<%= link_to 'Back', jobs_path %>
+    <%= link_to 'Edit', edit_job_path(@job) %> |
+    <%= link_to 'Back', jobs_path %>
+  </div>
+  <div class="span4">
+      Outro Lado
+  </div>
+</div>
+<!-- /.container -->
