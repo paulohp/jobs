@@ -17,7 +17,7 @@
 
     <p>
       <b>Description:</b>
-      <%= @job.description %>
+      <%= @job.description.html_safe %>
     </p>
 
     <p>
@@ -37,7 +37,7 @@
 
     <p>
       <b>Company description:</b>
-      <%= @job.company_description %>
+      <%= @job.company_description.html_safe %>
     </p>
 
     <p>
@@ -50,18 +50,6 @@
       <%= @job.apply_email %>
     </p>
 
-    <p>
-      <b>Contact:</b>
-      <%= @job.contact %>
-    </p>
-
-    <p>
-      <b>Terms:</b>
-      <%= @job.terms %>
-    </p>
-
-
-    <%= link_to 'Edit', edit_job_path(@job) %> |
     <%= link_to 'Back', jobs_path %>
   </div>
   <div class="span4">
