@@ -1,4 +1,7 @@
 Startupjobsbrasil::Application.routes.draw do
+  resources :ads
+
+
   mount Ckeditor::Engine => '/ckeditor'
 
   resources :jobs
