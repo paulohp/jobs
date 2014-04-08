@@ -4,6 +4,7 @@ a {
 .post-title a:hover {
     color: #1abb9c
 }
+
 ul.bullet li:before {
     color: #1abb9c;
 }
@@ -96,7 +97,7 @@ blockquote small {
 .nav.nav-tabs > li > a:focus {
     color: #1abb9c;
 }
-@media (min-width: 768px) and (max-width: 979px) { 
+@media (min-width: 768px) and (max-width: 979px) {
 	#header .dropdown-menu li a:hover,
 	#header .dropdown-menu li a.active {
 	    color: #1abb9c;
@@ -115,7 +116,7 @@ blockquote small {
 	    color: #1abb9c;
 	}
 }
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
 	#header .dropdown-menu li a:hover,
 	#header .dropdown-menu li a.active {
 	    color: #1abb9c;
