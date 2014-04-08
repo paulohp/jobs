@@ -1,0 +1,7 @@
+export SECRET_TOKEN=49ec79cf6a8fe9fd506352d68add508a3368de9ab50771f6d4ce0341d977f4dd8170c23062ea27ad29662d617a57317b3c04916370508cb789dd247bb10d6b34
+
+pushd ${OPENSHIFT_REPO_DIR} > /dev/null
+
+bundle exec rake db:migrate RAILS_ENV="production"
+
+popd > /dev/null
