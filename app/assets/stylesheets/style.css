@@ -179,8 +179,8 @@ ul.bullet li:before {
 	position: absolute;
 	bottom:-9px;
 	margin-left: 40px;
-	width: 9px; 
-	height: 9px; 
+	width: 9px;
+	height: 9px;
 	border-left: 9px solid transparent;
 	border-right: 9px solid transparent;
 	border-top: 9px solid #1abb9c;
@@ -727,8 +727,8 @@ blockquote small {
 #header .dropdown-menu > li > a:focus,
 #header .dropdown-submenu:hover > a,
 #header .dropdown-submenu:focus > a,
-#header .dropdown-menu > .active > a, 
-#header .dropdown-menu > .active > a:hover, 
+#header .dropdown-menu > .active > a,
+#header .dropdown-menu > .active > a:hover,
 #header .dropdown-menu > .active > a:focus {
   background: #363636;
   color: #d9d9d9;
@@ -1344,7 +1344,7 @@ input[type="submit"].btn::-moz-focus-inner {
     height: 30px;
     background-size: 30px 30px;
 }
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) { 
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
 	.tp-loader {
 	    background-image: url(style/images/loading@2x.gif)
 	}
@@ -1636,7 +1636,7 @@ input[type="submit"].btn::-moz-focus-inner {
 /*-----------------------------------------------------------------------------------*/
 /*	PARALAX
 /*-----------------------------------------------------------------------------------*/
-.parallax {    
+.parallax {
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1653,7 +1653,7 @@ input[type="submit"].btn::-moz-focus-inner {
 .parallax a:hover {
 	color: #1abb9c;
 }
-.parallax h1, 
+.parallax h1,
 .parallax h2,
 .parallax h3,
 .parallax h4,
@@ -1686,7 +1686,7 @@ input[type="submit"].btn::-moz-focus-inner {
 }
 .parallax.dribbble {
 	background-image: url(style/images/art/parallax3.jpg);
-    height: 561px;Â 
+    height: 561px;
 }
 .parallax .contact-info {
 	margin: 0;
@@ -1717,7 +1717,7 @@ input[type="submit"].btn::-moz-focus-inner {
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
-    
+
 }
 .sb-navigation-left:before,
 .sb-navigation-right:before {
@@ -1732,7 +1732,7 @@ input[type="submit"].btn::-moz-focus-inner {
     height: 44px;
     line-height: 44px;
     font-size: 20px;
-    
+
 }
 .sb-navigation-left,
 .sb-navigation-right {
@@ -1750,7 +1750,7 @@ input[type="submit"].btn::-moz-focus-inner {
 	position: absolute;
 }
 .showbiz-navigation .sb-navigation-left {
-	left: 10px;	
+	left: 10px;
 }
 .showbiz-navigation .sb-navigation-right {
 	right: 10px;
@@ -1850,11 +1850,11 @@ input[type="submit"].btn::-moz-focus-inner {
 	right: 20px;
 	background: rgba(0,0,0,0.4);
     color: #f7f7f7;
-    padding: 3px 11px; 
+    padding: 3px 11px;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     -moz-opacity: 1;
     -khtml-opacity: 1;
-    opacity: 1; 
+    opacity: 1;
 }
 .showbiz .enlarge:hover {
 	background: rgba(0,0,0,0.6);
@@ -2027,7 +2027,7 @@ input[type="submit"].btn::-moz-focus-inner {
     -webkit-border-radius: 5px;
     border-radius: 5px;
 }
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) { 
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
 	.grid-loader {
 	    background-image: url(style/images/loading@2x.png)
 	}
@@ -2078,8 +2078,8 @@ input[type="submit"].btn::-moz-focus-inner {
 .box.arrow:before {
 	display: block;
 	content: "";
-	width: 0; 
-	height: 0; 
+	width: 0;
+	height: 0;
 	position: absolute;
 	top: -9px;
 	left: 50%;
@@ -2234,7 +2234,7 @@ img.small {
 .accordion-heading .accordion-toggle {
     padding: 11px 15px;
     background: #FFF;
-    color: #484848; 
+    color: #484848;
     font-weight: 900;
     font-size: 14px;
     text-transform: uppercase;
@@ -2280,7 +2280,7 @@ img.small {
   border: none;
 }
 .nav-tabs > .active > a:hover {
-  
+
 }
 .nav.nav-tabs > li > a:hover,
 .nav.nav-tabs > li > a:focus {
@@ -2411,7 +2411,7 @@ img.small {
 /*-----------------------------------------------------------------------------------*/
 /*	RESPONSIVE
 /*-----------------------------------------------------------------------------------*/
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 	.thumbs li {
 	    width: 285px
 	}
@@ -2447,7 +2447,7 @@ img.small {
 	    width: 70%;
 	}
 }
-@media (min-width: 768px) and (max-width: 979px) { 
+@media (min-width: 768px) and (max-width: 979px) {
 	.navbar .container {
 		width: 724px;
 	}
@@ -2503,17 +2503,17 @@ img.small {
 	#header.navbar .nav > li > .dropdown-menu:after {
 	  display: none;
 	}
-    
+
 	#header .dropdown-menu > li > a:hover,
 	#header .dropdown-menu > li > a:focus,
 	#header .dropdown-submenu:hover > a,
 	#header .dropdown-submenu:focus > a,
-	#header .dropdown-menu > .active > a, 
-	#header .dropdown-menu > .active > a:hover, 
+	#header .dropdown-menu > .active > a,
+	#header .dropdown-menu > .active > a:hover,
 	#header .dropdown-menu > .active > a:focus,
-	#header .nav-collapse .nav > li > a:hover, 
-	#header .nav-collapse .nav > li > a:focus, 
-	#header .nav-collapse .dropdown-menu a:hover, 
+	#header .nav-collapse .nav > li > a:hover,
+	#header .nav-collapse .nav > li > a:focus,
+	#header .nav-collapse .dropdown-menu a:hover,
 	#header .nav-collapse .dropdown-menu a:focus {
 	  background: none;
 	  color: #1abb9c;
@@ -2545,7 +2545,7 @@ img.small {
 	    padding-left: 20px;
 	}
 }
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
 	body {
 	    padding-right: 0px !important;
 	    padding-left: 0px !important;
@@ -2598,12 +2598,12 @@ img.small {
 	#header .dropdown-menu > li > a:focus,
 	#header .dropdown-submenu:hover > a,
 	#header .dropdown-submenu:focus > a,
-	#header .dropdown-menu > .active > a, 
-	#header .dropdown-menu > .active > a:hover, 
+	#header .dropdown-menu > .active > a,
+	#header .dropdown-menu > .active > a:hover,
 	#header .dropdown-menu > .active > a:focus,
-	#header .nav-collapse .nav > li > a:hover, 
-	#header .nav-collapse .nav > li > a:focus, 
-	#header .nav-collapse .dropdown-menu a:hover, 
+	#header .nav-collapse .nav > li > a:hover,
+	#header .nav-collapse .nav > li > a:focus,
+	#header .nav-collapse .dropdown-menu a:hover,
 	#header .nav-collapse .dropdown-menu a:focus {
 	  background: none;
 	  color: #1abb9c;
@@ -2656,10 +2656,10 @@ img.small {
 	.showbiz .enlarge {
 		bottom: 15px;
 		right: 15px;
-	    padding: 1px 9px; 
+	    padding: 1px 9px;
 	}
 	.showbiz .enlarge:before {
-		font-size: 13px; 
+		font-size: 13px;
 	}
 	.grid-blog .post {
 		margin-bottom: 28px;
@@ -2692,7 +2692,7 @@ img.small {
 	    padding: 0;
 	}
 }
-@media only screen and (max-width: 479px) { 
+@media only screen and (max-width: 479px) {
 	.parallax.testimonials {
 	    height: 430px;
 	}
