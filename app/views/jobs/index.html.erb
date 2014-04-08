@@ -2,7 +2,7 @@
   <div class="container">
     <h1>Ultimos envios</h1>
   </div>
-  <!-- /.container --> 
+  <!-- /.container -->
 </div>
 <!-- /.section-head -->
 <div class="container inner">
@@ -23,12 +23,14 @@
         <div class="right">
           <%= link_to "Ver mais", job %>
         </div>
-        
+
       </div>
     <% end %>
   </div>
   <div class="span4">
-      Outro Lado
+      <% @ads.each do |ad| %>
+        <%= ad.title %>
+      <% end %>
   </div>
 </div>
 <!-- /.container -->

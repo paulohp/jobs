@@ -3,6 +3,7 @@ class JobsController < ApplicationController
   # GET /jobs.json
   def index
     @jobs = Job.all
+    @ads = Ad.all
 
     respond_to do |format|
       format.html # index.html.erb
