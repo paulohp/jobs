@@ -10,6 +10,8 @@ Startupjobsbrasil::Application.routes.draw do
   resources :categories
 
   match "enviar-uma-vaga" => "jobs#new"
+
+  match "sobre" => "pages#about"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
