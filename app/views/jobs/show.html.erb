@@ -1,6 +1,6 @@
 <div class="section-head">
   <div class="container">
-    <h1><%= @job.title %></h1>
+    <h1>Detalhes</h1>
   </div>
   <!-- /.container -->
 </div>
@@ -11,46 +11,46 @@
     <p id="notice"><%= notice %></p>
 
     <p>
-      <b>Title:</b>
+      <b>Titulo:</b>
       <%= @job.title %>
     </p>
 
     <p>
-      <b>Description:</b>
-      <%= @job.description.html_safe %>
-    </p>
-
-    <p>
-      <b>Company name:</b>
+      <b>Startup:</b>
       <%= @job.company_name %>
     </p>
 
     <p>
-      <b>Website:</b>
-      <%= @job.website %>
+      <b>Descrição da vaga:</b>
+      <%= @job.description.html_safe %>
     </p>
 
     <p>
-      <b>Category:</b>
+      <b>Categoria:</b>
       <%= @job.category.name %>
     </p>
 
     <p>
-      <b>Company description:</b>
+      <b>Site:</b>
+      <%= @job.website %>
+    </p>
+
+    <p>
+      <b>Descrição da startup:</b>
       <%= @job.company_description.html_safe %>
     </p>
 
     <p>
-      <b>Keywords:</b>
+      <b>Palavras Chave:</b>
       <%= @job.keywords %>
     </p>
 
     <p>
-      <b>Apply email:</b>
-      <%= @job.apply_email %>
+      <b>Curtiu? Acha que pode levar essa startup as estrelas? Aplica ae:</b>
+      <p>
+        <%= mail_to 'Aplicar Vaga', @job.apply_email, "btn btn-large btn-primary" %>
+      </p>
     </p>
-
-    <%= link_to 'Back', jobs_path %>
   </div>
   <div class="span4">
       Outro Lado
