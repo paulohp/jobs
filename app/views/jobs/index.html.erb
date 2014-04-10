@@ -9,22 +9,24 @@
   <div class="row">
   <div class="span8">
     <% @jobs.each do |job| %>
-      <div class="span7">
-        <%= job.name_and_category %>
-        <%= link_to job do %>
-            <h1><%=job.title%></h1>
-        <% end %>
-        <div>
-            <%= job.created_at.to_s(:post) %>
-        </div>
-        <div>
-            <span><%= job.description.html_safe %></span>
-        </div>
-        <div class="right">
-          <%= link_to "Ver mais", job %>
-        </div>
+      <% if(job.active) %>
+        <div class="span7">
+          <%= job.name_and_category %>
+          <%= link_to job do %>
+              <h1><%=job.title%></h1>
+          <% end %>
+          <div>
+              <%= job.created_at.to_s(:post) %>
+          </div>
+          <div>
+              <span><%= job.description.html_safe %></span>
+          </div>
+          <div class="right">
+            <%= link_to "Ver mais", job %>
+          </div>
 
-      </div>
+        </div>
+      <% end %>
     <% end %>
   </div>
   <div class="span4">

@@ -1,14 +1,11 @@
 Startupjobsbrasil::Application.routes.draw do
-  resources :ads
-
-
   mount Ckeditor::Engine => '/ckeditor'
 
   resources :jobs
-
-
+  resources :ads
   resources :categories
-
+  resources :pages
+  
   match "enviar-uma-vaga" => "jobs#new"
 
   match "sobre" => "pages#about"
