@@ -9,7 +9,7 @@
   <div class="row">
   <div class="span8">
     <% @jobs.each do |job| %>
-      <% if(!job.active) %>
+      <% if(job.active) %>
         <div class="span7">
           <%= job.name_and_category %>
           <%= link_to job do %>

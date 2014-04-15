@@ -1,6 +1,6 @@
 class Job < ActiveRecord::Base
   acts_as_taggable
-  attr_accessible :apply_email, :category_id, :company_description, :company_name, :contact, :description, :keywords, :terms, :title, :website
+  attr_accessible :apply_email, :category_id, :company_description, :company_name, :contact, :description, :keywords, :terms, :title, :website, :active
   belongs_to :category
 
   validates_presence_of :title, :company_name, :category_id, :company_description, :company_name, :website, :description, :apply_email, :contact
